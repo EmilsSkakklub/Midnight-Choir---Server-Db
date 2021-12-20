@@ -68,7 +68,7 @@ app.get('/readPlayer', function (request, respond) {
 
 	//Extracts the field values from the request
 	var name = request.query['name'];
-	console.log("HTTP Get Request: /readPlayer?name=" + name + "&score=" + score);
+	console.log("HTTP Get Request: /readPlayer?name=" + name);
 
 	//specifies the database within the cluster and collection within the database
 	var collection = client.db('EmthonDB').collection('Players');
